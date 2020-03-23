@@ -1312,7 +1312,7 @@ ul.social-icons li {
 
 
 #site-header {
-	background: #333333;
+	background: #444444;
 	position: relative;
 }
 
@@ -1791,7 +1791,7 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children > a {
 }
 
 .menu-modal-inner {
-	background: #fff;
+	background: #333333;
 	display: flex;
 	justify-content: stretch;
 	overflow: auto;
@@ -2055,6 +2055,7 @@ button.sub-menu-toggle.active svg {
 
 .search-modal-inner {
 	background: #fff;
+	color: #AAAAAA;
 	transform: translateY(-100%);
 	transition: transform 0.15s linear, box-shadow 0.15s linear;
 }
@@ -2317,7 +2318,6 @@ body.template-full-width [class*="wp-block"].alignfull:not(.has-background) [cla
 /* Archive Header ---------------------------- */
 
 .archive-header {
-	background-color: #fff;
 	padding: 4rem 0;
 }
 
@@ -2360,7 +2360,6 @@ body:not(.singular) main > article:first-of-type {
 /* Post Header ------------------------------- */
 
 .singular .entry-header {
-	background-color: #fff;
 	padding: 4rem 0;
 }
 
@@ -4408,9 +4407,6 @@ ul.footer-social li {
 
 .powered-by-wordpress,
 .to-the-top {
-    position: fixed;
-    right: 50px;
-    bottom: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
