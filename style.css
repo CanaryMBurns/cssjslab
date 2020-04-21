@@ -12694,6 +12694,10 @@ a.to-the-top .arrow {
 	}
 }
 
+svg#three {
+	height: 45px;
+}
+
 svg#three .cls-1,
 svg#three .cls-2 {
   fill: BlanchedAlmond;
