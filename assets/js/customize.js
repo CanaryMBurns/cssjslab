@@ -23,9 +23,5 @@
 				} );
 			}
         } );
-        
-        $( 'body' ).scroll( function() {
-            console.log('xddddddddddddd');
-        });
 	} );
 }( jQuery, wp.customize ) );

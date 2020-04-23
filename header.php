@@ -46,19 +46,15 @@
 
 						?>
 
-						<button class="toggle search-toggle mobile-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
-							<span class="toggle-inner">
-								<span class="toggle-icon">
-									<?php twentytwenty_the_theme_svg( 'search' ); ?>
-								</span>
-							</span>
-						</button><!-- .search-toggle -->
+							<div class="search-button">
+								<svg xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+							</div>
 
 					<?php } ?>
 
 					<div class="header-titles">
 						<a class="site-title" href="<?php echo get_home_url(); ?>">
-							<svg id="three" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 306 185">
+							<svg id="logo" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 306 185">
 								<defs>
 								  <style>
 								  </style>
@@ -82,13 +78,10 @@
 							</a>
 					</div><!-- .header-titles -->
 
-					<button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal"  data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
-						<span class="toggle-inner">
-							<span class="toggle-icon">
-								<?php twentytwenty_the_theme_svg( 'ellipsis' ); ?>
-							</span>
-						</span>
-					</button><!-- .nav-toggle -->
+					<div class="menu-burger">
+  						<span class="menu-burger-icon"></span>
+					</div>
+
 
 				</div><!-- .header-titles-wrapper -->
 
@@ -145,13 +138,10 @@
 
 							<div class="toggle-wrapper nav-toggle-wrapper has-expanded-menu">
 
-								<button class="toggle nav-toggle desktop-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
-									<span class="toggle-inner">
-										<span class="toggle-icon">
-											<?php twentytwenty_the_theme_svg( 'ellipsis' ); ?>
-										</span>
-									</span>
-								</button><!-- .nav-toggle -->
+							<div class="menu-burger">
+  								<span class="menu-burger-icon"></span>
+							</div>
+
 
 							</div><!-- .nav-toggle-wrapper -->
 
@@ -161,14 +151,8 @@
 						if ( true === $enable_header_search ) {
 							?>
 
-							<div class="toggle-wrapper search-toggle-wrapper">
-
-								<button class="toggle search-toggle desktop-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
-									<span class="toggle-inner">
-										<?php twentytwenty_the_theme_svg( 'search' ); ?>
-									</span>
-								</button><!-- .search-toggle -->
-
+							<div class="search-button">
+								<svg xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
 							</div>
 
 							<?php

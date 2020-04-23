@@ -656,6 +656,28 @@ twentytwentyDomReady( function() {
 	twentytwenty.modalMenu.init();	// Modal Menu
 	twentytwenty.primaryMenu.init();	// Primary Menu
 	twentytwenty.touchEnabled.init();	// Add class to body if device is touch-enabled
+
+	const body = document.querySelector('body')
+	const menuBurger = document.querySelector('.menu-burger');
+	const menuBurgerIcon = document.querySelector('.menu-burger-icon');
+	const navigationDrawer = document.querySelector('.navigation-drawer')
+	const logo = document.querySelector('#logo')
+
+	menuBurger.addEventListener('click', (event) => {
+		toggleClass(navigationDrawer, 'open');
+		toggleClass(menuBurger, 'open');
+		toggleClass(menuBurgerIcon, 'open');
+		toggleClass(logo, 'open');
+		toggleClass(body, 'no-scroll');
+	});
+
+	const toggleClass = (element, className) => {
+		if (element.classList.contains(className)) {
+		element.classList.remove(className);
+		} else {
+		element.classList.add(className);
+		}
+	}
 } );
 
 /*	-----------------------------------------------------------------------------------------------
