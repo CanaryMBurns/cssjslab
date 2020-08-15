@@ -657,11 +657,17 @@ twentytwentyDomReady( function() {
 	twentytwenty.primaryMenu.init();	// Primary Menu
 	twentytwenty.touchEnabled.init();	// Add class to body if device is touch-enabled
 
-	const body = document.querySelector('body')
+	const body = document.querySelector('body');
 	const menuBurger = document.querySelector('.menu-burger');
 	const menuBurgerIcon = document.querySelector('.menu-burger-icon');
-	const navigationDrawer = document.querySelector('.navigation-drawer')
-	const logo = document.querySelector('#logo')
+	const navigationDrawer = document.querySelector('.navigation-drawer');
+	const navigationDrawerBody = document.querySelector('.navigation-drawer > .body');
+	const logo = document.querySelector('#logo');
+	const header = document.querySelector('.header-inner');
+
+	// Main
+	navigationDrawerBody.style.height = 'calc(80% - ' + header.offsetHeight + 'px)'
+	navigationDrawerBody.style.marginTop = header.offsetHeight + 'px'
 
 	menuBurger.addEventListener('click', (event) => {
 		toggleClass(navigationDrawer, 'open');
@@ -670,6 +676,11 @@ twentytwentyDomReady( function() {
 		toggleClass(logo, 'open');
 		toggleClass(body, 'no-scroll');
 	});
+
+	window.addEventListener('resize', () => {
+		navigationDrawerBody.style.height = 'calc(80% - ' + header.offsetHeight + 'px)'
+		navigationDrawerBody.style.marginTop = header.offsetHeight + 'px'
+	});	
 
 	const toggleClass = (element, className) => {
 		if (element.classList.contains(className)) {

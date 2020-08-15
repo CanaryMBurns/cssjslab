@@ -10,5 +10,11 @@
 ?>
 
 <nav class="navigation-drawer right">
-
+    <div class="body">
+        <a>This sugar cane</a>
+        <a>this lemonade</a>
+        <a>this hurricane</a>
+        <a>I'm not afraid</a>
+    </div>
+    <div class="footer"></div>
 </nav>
