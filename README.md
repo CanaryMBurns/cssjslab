@@ -1,4 +1,4 @@
-# cssjslab
+# CSS and JS lab
 
 ## https://cssjslab.com/
 
