@@ -2,4 +2,4 @@
 
 ## https://cssjslab.com/
 
-This is my Wordpress blog theme:)
+This is my Wordpress blog theme :)
